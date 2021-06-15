@@ -1,0 +1,8 @@
+<div class="zippy">
+  <div class="zippy__title" (click)="handleZippy()">
+    {{title}} <span class="bi" [ngClass]="closed ? 'bi-chevron-down' : 'bi-chevron-up'"></span>
+  </div>
+  <div class="zippy__content" [ngClass]="closed ? 'hidden' : 'shown'">
+    This is some content.
+  </div>
+</div>

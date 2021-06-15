@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-course';
+  like = { 
+    title: "some title",
+    likes: 40,
+    liked: false
+  } 
 }
