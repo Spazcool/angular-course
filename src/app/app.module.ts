@@ -14,6 +14,7 @@ import { ZippyComponent } from './zippy/zippy.component';
 import { CourseformComponent } from './courseform/courseform.component';
 import { PasswordComponent } from './password/password.component';
 import { PostsComponent } from './posts/posts.component';
+import { PostService } from './services/post.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,7 @@ import { PostsComponent } from './posts/posts.component';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [PostService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
